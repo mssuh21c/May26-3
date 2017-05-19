@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.may26.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Hello World!"
+        android:id="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:text="'Upper Button'"
+        android:layout_width="112dp"
+        android:layout_height="73dp"
+        android:id="@+id/button1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="40dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp" />
+
+    <Button
+        android:text="Lower Button"
+        android:layout_width="130dp"
+        android:layout_height="96dp"
+        android:id="@+id/button2"
+        android:layout_marginTop="144dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="160dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
