@@ -1,5 +1,6 @@
 package com.example.user.may26;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -36,8 +37,10 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
 
         mBtn1.setOnClickListener ( new  Button.OnClickListener()  {
                     public void onClick ( View v ) {
-                        Button mBtn2 = (Button)findViewById(R.id.button2);
-                            mBtn2.setText("bye");
+         //               Button mBtn2 = (Button)findViewById(R.id.button2);
+           //                 mBtn2.setText("bye");
+                        Intent intent = new  Intent ( MainActivity.this, SubActivity.class);
+                        startActivity( intent );
                     }
         } ) ;
 
