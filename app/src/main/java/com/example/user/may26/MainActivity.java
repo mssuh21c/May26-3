@@ -11,10 +11,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity /*implements View.OnClickListener*/  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
+    /*Button mBtn1 = (Button)findViewById(R.id.button1);
+    Button mBtn2 = (Button)findViewById(R.id.button2);
 
-
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +35,7 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
         });
 
 
-        Button mBtn1 = (Button)findViewById(R.id.button1);
-
+/*
         mBtn1.setOnClickListener ( new  Button.OnClickListener()  {
                     public void onClick ( View v ) {
          //               Button mBtn2 = (Button)findViewById(R.id.button2);
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
                         startActivity( intent );
                     }
         } ) ;
+
+        */
 
 
     }
@@ -67,6 +70,18 @@ public class MainActivity extends AppCompatActivity /*implements View.OnClickLis
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        Button mBtn1 = (Button)findViewById(R.id.button1);
+        Button mBtn2 = (Button)findViewById(R.id.button2);
+
+        mBtn2.setText("bye");
+
+        Intent intent =new Intent ( MainActivity.this, SubActivity.class);
+        startActivity( intent);
     }
 /*
     @Override
